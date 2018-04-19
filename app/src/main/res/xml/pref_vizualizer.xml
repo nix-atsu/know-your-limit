@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Limit">
+        <EditTextPreference
+            android:key="@string/key_daily_limit"
+            android:defaultValue="10"
+            android:singleLine="true"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="10"
+            android:summary="10"
+            android:title="@string/daily_limit_title" />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Users">
+
+        <SwitchPreference
+            android:key="@string/key_two_users"
+            android:defaultValue="true"
+            android:summaryOff="show limits for one user"
+            android:summaryOn="show limits for two users"
+            android:textColor="@color/primaryTextColor"
+            android:title="Two users" />
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="@string/key_first_user_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:dependency="two_users"
+            android:title="First User name" />
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="@string/key_second_user_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:dependency="two_users"
+            android:title="Second User name" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Reset">
+
+        <EditTextPreference
+            android:hint="Set current limit"
+            android:key="@string/key_current_limit_reset"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Reset current limit" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

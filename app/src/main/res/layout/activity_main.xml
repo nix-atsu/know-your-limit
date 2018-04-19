@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingTop="@dimen/activity_margin"
+        android:textColor="@color/primaryTextColor"
+        tools:context=".MainActivity" >
+
+        <!--circle and total limit info inside-->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="77"
+            android:progressDrawable="@drawable/style_circle_fill"
+            android:secondaryProgress="10"
+            />
+
+        <TextView
+            android:id="@+id/total_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:textSize="32sp"
+            android:textColor="@color/primaryTextColor"
+            tools:text="-100/-100"
+            />
+
+
+        <!--add expense button-->
+        <Button
+            android:id="@+id/add_expense"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_bar"
+            android:fontFamily="serif"
+            android:text="@string/add_expense"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+        />
+
+        <!--two users limits info-->
+        <TextView
+            android:id="@+id/user1_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/add_expense"
+            android:paddingTop="@dimen/activity_margin"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="28sp"
+            tools:text="User 1 Limit: -50" />
+
+        <TextView
+            android:id="@+id/user2_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="@dimen/activity_margin"
+            android:layout_below="@+id/user1_limit"
+            android:textSize="28sp"
+            android:textColor="@color/primaryTextColor"
+            tools:text="User 2 Limit: -50"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

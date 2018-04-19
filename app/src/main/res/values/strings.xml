@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Know Your Limit</string>
+    <string name="show_limits">Show Limits</string>
+    <string name="add_expense">Add expense</string>
+
+    <!--Settings screen-->
+    <string name="action_settings">Settings</string>
+    <string name="daily_limit_title">Your daily limit</string>
+
+
+    <!--preferences keys-->
+    <string name="key_daily_limit" translatable="false">daily_limit</string>
+    <string name="key_two_users" translatable="false">two_users</string>
+    <string name="key_current_limit_reset" translatable="false">current_limit_reset</string>
+    <string name="key_first_user_name" translatable="false">first_user_name</string>
+    <string name="key_second_user_name" translatable="false">second_user_name</string>
+</resources>

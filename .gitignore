@@ -10,3 +10,5 @@ gradlew*
 /build
 /captures
 .externalNativeBuild
+app/proguard-rules.pro
+app/build

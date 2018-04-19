@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorPrimary">#3a1a7e</color>-->
+    <!--<color name="colorPrimaryDark">#338a3e</color>-->
+    <!--<color name="colorAccent">#66bb6a</color>-->
+
+    <!--<color name="primaryColor">#4527a0</color>-->
+    <!--<color name="primaryLightColor">#7953d2</color>-->
+    <!--<color name="primaryDarkColor">#000070</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+    <!--<color name="circle_light">#98ee99</color>-->
+
+    <!--<color name="circle_main">#338a3e</color>-->
+
+    <color name="colorAccent">#8BC34A</color>
+        <color name="colorPrimary">#607D8B</color>
+        <color name="colorPrimaryDark">#455A64</color>
+        <color name="primary_light">#eceff1</color>
+
+        <color name="circle_main">#8BC34A</color>
+        <color name="circle_light">#aed581</color>
+        <color name="circle_red">#ffff0000</color>
+        <color name="circle_red_light">#ff8c8c</color>
+
+        <color name="primaryTextColor">#212121</color>
+
+        <color name="secondary_text">#757575</color>
+        <color name="icons">#FFFFFF</color>
+        <color name="divider">#BDBDBD</color>
+
+
+
+</resources>
